@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Калькулятор калорий</title>
+    <link href="table.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    
+    <table id="calorieTable">
+        <caption top><h1>Калькулятор калорий</h1></caption>
+        <thead>
+            <tr>
+                <th>Продукт</th>
+                <th>Масса (в граммах)</th>
+                <th>Калории</th>
+                <th>Б</th>
+                <th>Ж</th>
+                <th>У</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <select class="productSelect">
+
+                        <option value='' disabled selected>Выберете продукт</option>
+                        <optgroup label="Мясо">
+                            <option>Курица</option>
+                            <option>Говядина</option>
+                        </optgroup>
+
+                        <optgroup label="Овощи">
+                            <option>Огурец</option>
+                        </optgroup>
+                
+                    </select>
+                </td>
+                <td><input type="number" class="gramsInput" placeholder="Введите его массу"></td>
+                <!-- <td><input type="text" id="caloriesInput" readonly></td> -->
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button onclick="deleteRow(this)">Удалить</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button id="addRowBtn" onclick="addRow()">Добавить строку</button>
+    <button id="clearTable" onclick="clearTable()">Очистить таблицу</button>
+</div>
+
+    <script src="таблица.js"></script>
+</body>
+</html>

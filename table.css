@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    transition: all 0.4s;
+}
+
+.container{
+    max-width: 665px;
+    margin: auto;
+}
+
+
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+caption{
+    margin-bottom: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+td:nth-child(4), td:nth-child(5), td:nth-child(6){
+    width: 40px;
+}
+
+th{
+    border: grey solid 1px;
+    border-top: none;
+    background: #eee;
+    padding: 4px 6px;
+}
+
+th:last-child, td:last-child{
+    background: #fff;
+    border: none;
+}
+
+td{
+    padding: 5px 2px;
+    border: 1px solid grey;
+    text-align: center;
+}
+
+td > input, td > select{
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    font-size: 17px;
+    outline: none;
+}
+
+optgroup, option{
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+td > button{
+    background: rgb(255, 103, 103);
+    padding: 3px 4px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+td > button:hover{
+    background: red;
+    box-shadow: 0 0 10px red;
+}
+
+#addRowBtn, #clearTable{
+    background: rgb(255, 211, 91);
+    padding: 3px 5px;
+    border-radius: 7px;
+    margin-left: 5px;
+    font-size: 14px;
+    height: 33px;
+    border: 1px solid grey;
+}
+
+#addRowBtn:hover{
+    background: rgb(255, 195, 30);
+    box-shadow: 0 0 20px yellow;
+}
+
+#clearTable{
+    background: rgb(104, 104, 255);
+}
+
+#clearTable:hover{
+    background: rgb(67, 67, 255);
+    box-shadow: 0 0 10px blue;
+}
+/* input::-webkit-input-placeholder {
+    color: aliceblue;
+} */
